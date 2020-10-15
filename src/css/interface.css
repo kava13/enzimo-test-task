@@ -1,0 +1,11 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+  padding: 15px;
+}
+/*# sourceMappingURL=interface.css.map */
