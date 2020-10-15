@@ -1,0 +1,21 @@
+.doctors-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.doctors-block__item {
+  width: 309px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.25);
+          box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.25);
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=doctors.css.map */

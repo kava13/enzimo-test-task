@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,cAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,aAAa;CAOF;;AAN3B,AAAD,oBAAO,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;EACnB,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,sBAAsB;EAC9C,aAAa,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/doctors.sass"
+    ],
+    "names": [],
+    "file": "doctors.css"
+}
