@@ -3,54 +3,54 @@
       "id": 1,
       "name": "Терапевт",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/therapist.png"
     },
     {
       "id": 2,
       "name": "Педиатр",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/pediatrician.png"
     },
     {
       "id": 3,
       "name": "Лор",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/lore.png"
     },
     {
       "id": 4,
       "name": "Фониатор",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/phoniator.png"
     },
     {
       "id": 5,
       "name": "Уролог",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/urologist.png"
     },
     {
       "id": 6,
       "name": "Офтальмолог",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/ophthalmologist.png"
     },
     {
       "id": 7,
       "name": "Гастроэнтеролог",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/gastroenterologist.png"
     },
     {
       "id": 8,
       "name": "Невролог",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/neurologist.png"
     },
     {
       "id": 9,
       "name": "Стоматолог терапевт",
       "description": "Специалист общего профиля",
-      "img": " "
+      "img": "images/doctors/dentist.png"
     }
 ]
