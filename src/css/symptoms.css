@@ -1,0 +1,74 @@
+.symptoms-wrapper {
+  position: relative;
+}
+
+.symptoms-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.symptoms-item {
+  width: 195px;
+  height: 130px;
+  margin-right: 15px;
+  padding-top: 7px;
+  padding-left: 10px;
+  border-radius: 6px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.symptoms-img {
+  margin-bottom: 28px;
+}
+
+.symptoms-text {
+  display: block;
+  font-family: Arial Narrow;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.symptoms-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 40px;
+  height: 40px;
+  -webkit-box-shadow: 1px 2px 5px rgba(35, 35, 35, 0.15);
+          box-shadow: 1px 2px 5px rgba(35, 35, 35, 0.15);
+  background-color: #fffefe;
+  border: none;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+}
+
+.symptoms-button.symptoms-button__prev > img {
+  margin-right: 4px;
+}
+
+.symptoms-button.symptoms-button__next {
+  right: 0;
+}
+
+.symptoms-button.symptoms-button__next > img {
+  margin-left: 4px;
+}
+/*# sourceMappingURL=symptoms.css.map */

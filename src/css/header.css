@@ -40,6 +40,15 @@
           box-shadow: 1px 1px 5px rgba(35, 35, 35, 0.15);
 }
 
+.header-nav > button:active {
+  -webkit-box-shadow: inset 2px 3px 4px #D1D9E6;
+          box-shadow: inset 2px 3px 4px #D1D9E6;
+}
+
+.header-nav > button:hover {
+  opacity: 0.8;
+}
+
 .header-nav__search {
   display: -webkit-box;
   display: -ms-flexbox;
