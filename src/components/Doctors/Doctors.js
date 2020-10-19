@@ -17,9 +17,23 @@ class Doctors extends React.Component {
                 <div className='container'>
                     <div className='doctors-block'>
                         {doctorsData.map((doctor) => {
-                            
-                            return (<div className='doctors-block__item'>{doctor.name}</div>)
+                            return (
+                            <a className='doctors-block__item' href="#">
+                                <div className='doctors-block__img'>
+                                    <img src={doctor.img}></img>
+                                </div>
+                                <div className='doctors-block__text'>
+                                    <span className='doctors-block__title'>{doctor.name}</span>
+                                    <span className='doctors-block__description'>{doctor.description}</span>
+                                </div>
+                            </a>)
                         })}
+                    </div>
+                    <div className='doctors-text'>
+                        <a href="#">
+                            <span>Посмотреть все</span>
+                            <img src="/images/next.png"></img>
+                        </a>
                     </div>     
                 </div>
             </section>

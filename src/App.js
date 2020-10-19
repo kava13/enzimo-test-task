@@ -4,12 +4,83 @@ import './App.css';
 import './css/interface.css';
 import Header from './components/Header/Header';
 import Doctors from './components/Doctors/Doctors';
+import SimpleSlider from './components/Slider/Slider';
+import Symptoms from './components/Symptoms/Symptoms';
 
 class App extends React.Component {
 
   constructor(props) {
     super()
-    this.state = { doctorsData: [] }
+    this.state = {
+      doctorsData: [],
+      clinicsData: [{
+          img: 'images/clinics/popova.png',
+          text: 'Клиника Марии Поповой',
+          color: 'linear-gradient(293.6deg, #3AC3AF 50.62%, #64DBCA 95.85%)'
+        },
+        {
+          img: 'images/clinics/vita.png',
+          text: 'Медицинский центр Вита',
+          color: 'linear-gradient(296.23deg, #F7F9FB 28.99%, #FFFFFF 73.91%)'
+        },
+        {
+          img: 'images/clinics/lore.png',
+          text: 'Лор Клиника',
+          color: 'linear-gradient(293.6deg, #518CFF 50.62%, #86ADF9 95.85%)'
+        },
+        {
+          img: 'images/clinics/another1.png',
+          text: 'Клиника номер 4',
+          color: 'linear-gradient(293.6deg, #3AC3AF 50.62%, #64DBCA 95.85%)'
+        },
+        {
+          img: 'images/clinics/another2.png',
+          text: 'Клиника номер 5',
+          color: 'linear-gradient(293.6deg, #3AC3AF 50.62%, #64DBCA 95.85%)'
+        },
+        {
+          img: 'images/clinics/another3.png',
+          text: 'Клиника номер 6',
+          color: 'linear-gradient(293.6deg, #3AC3AF 50.62%, #64DBCA 95.85%)'
+        }
+      ],
+      symptomsData: [{
+        img: 'images/symptoms/stomach.svg',
+        text: 'Боли в животе',
+        color: 'linear-gradient(313.26deg, rgba(249, 177, 97, 0.5) 57.2%, rgba(251, 193, 134, 0.5) 84.09%)'
+      },
+      {
+        img: 'images/symptoms/tooth.svg',
+        text: 'Зубная боль',
+        color: 'linear-gradient(298.7deg, rgba(80, 133, 238, 0.5) 38.31%, rgba(124, 159, 227, 0.5) 77.56%)'
+      },
+      {
+        img: 'images/symptoms/injury.svg',
+        text: 'Последствия травм',
+        color: 'linear-gradient(301.3deg, rgba(53, 173, 156, 0.5) 36.46%, rgba(92, 199, 183, 0.5) 74.37%)'
+      },
+      {
+        img: 'images/symptoms/heart.svg',
+        text: 'Проблемы с сердцем',
+        color: 'linear-gradient(299.96deg, rgba(219, 103, 142, 0.5) 47.21%, rgba(232, 148, 176, 0.5) 76.12%)'
+      },
+      {
+        img: 'images/symptoms/virus.svg',
+        text: 'Простуда',
+        color: 'linear-gradient(313.26deg, rgba(249, 177, 97, 0.5) 57.2%, rgba(251, 193, 134, 0.5) 84.09%)'
+      },
+      {
+        img: 'images/symptoms/stomach.svg',
+        text: 'Тропическая гемангиома Мовсисяна',
+        color: 'linear-gradient(298.7deg, rgba(80, 133, 238, 0.5) 38.31%, rgba(124, 159, 227, 0.5) 77.56%)'
+      },
+      {
+        img: 'images/symptoms/stomach.svg',
+        text: 'Просто хочу больничный',
+        color: 'linear-gradient(301.3deg, rgba(53, 173, 156, 0.5) 36.46%, rgba(92, 199, 183, 0.5) 74.37%)'
+      },
+    ]
+    }
   }
 
   componentDidMount() {
@@ -21,15 +92,26 @@ class App extends React.Component {
     this.setState({ doctorsData: response.data})
   }
 
+  scrl = () => {
+    console.log('Нажато');
+    let element = document.querySelector('.testing');
+    console.log(element);
+    element.scrollLeft = 300;
+  }
+
   render() {
   
-    const { doctorsData } = this.state;
-    
-
+    const { doctorsData, clinicsData, symptomsData } = this.state;
+  
     return (
       <div>
         <Header/>
-        { <Doctors doctorsData={doctorsData}/> }
+        <Symptoms symptomsData={symptomsData}/>
+        <Doctors doctorsData={doctorsData}/>
+        <div className='container'>
+        <SimpleSlider clinicsData={clinicsData}/>
+        </div>
+        
       </div>
     );
   }

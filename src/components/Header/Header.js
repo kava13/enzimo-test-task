@@ -13,8 +13,8 @@ class Header extends React.Component {
                     <div className='header-logo__text'><img src="/images/logo-text.png"/></div>
                     </div>
                     <div className='header-nav'>
-                        <button className='header-nav__search'><img src="/images/search.png"></img></button>
-                        <button className='header-nav__faq'>?</button>
+                        <button className='header-nav__search' href='#'><img src="/images/search.png"></img></button>
+                        <button className='header-nav__faq' href='#'>?</button>
                     </div>
                 </div>     
             </div>
