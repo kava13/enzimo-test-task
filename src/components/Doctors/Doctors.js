@@ -8,8 +8,6 @@ class Doctors extends React.Component {
         super(props);
     }
 
-
-
     render () {
         const { doctorsData } = this.props;
         return (
