@@ -1,11 +1,12 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css';
 import './css/interface.css';
 import Header from './components/Header/Header';
-import Doctors from './components/Doctors/Doctors';
-import SimpleSlider from './components/Slider/Slider';
 import Symptoms from './components/Symptoms/Symptoms';
+import Doctors from './components/Doctors/Doctors';
+import Clinics from './components/Clinics/Clinics';
+import Menu from './components/Menu/Menu';
+
 
 class App extends React.Component {
 
@@ -92,13 +93,6 @@ class App extends React.Component {
     this.setState({ doctorsData: response.data})
   }
 
-  scrl = () => {
-    console.log('Нажато');
-    let element = document.querySelector('.testing');
-    console.log(element);
-    element.scrollLeft = 300;
-  }
-
   render() {
   
     const { doctorsData, clinicsData, symptomsData } = this.state;
@@ -109,9 +103,9 @@ class App extends React.Component {
         <Symptoms symptomsData={symptomsData}/>
         <Doctors doctorsData={doctorsData}/>
         <div className='container'>
-        <SimpleSlider clinicsData={clinicsData}/>
+          <Clinics clinicsData={clinicsData}/>
         </div>
-        
+        <Menu/>
       </div>
     );
   }
