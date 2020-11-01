@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import '../../css/interface.css';
 import '../../css/clinics.css';
@@ -38,7 +39,7 @@ export default class Clinics extends Component {
 
     return (
       <div>
-        <h2 className='clinics-title'> КЛИНИКИ </h2>
+        <Link to={`/clinics`}><h2 className='clinics-title'> КЛИНИКИ </h2></Link>
         <Slider {...settings}>
 
         {clinicsData.map( (clinic, index) => {

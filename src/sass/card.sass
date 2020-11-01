@@ -1,0 +1,99 @@
+.cards-back, .cards-faq
+    border: none
+    width: 45px
+    height: 45px
+    border-radius: 100px
+    background-color: #ffffff
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, 0.15)
+    &:active
+        box-shadow: inset 2px 3px 4px #D1D9E6
+        &:hover
+            opacity: 0.8
+
+.cards
+    &-header
+        display: flex
+        justify-content: space-between
+    &-input
+        background: #FFFFFF
+        box-shadow: inset 1px 1px 4px rgba(35, 35, 35, 0.15)
+        border-radius: 53px
+        border: none
+        padding: 15px
+        outline: none
+        width: 309px
+        height: 39px
+    &-faq
+        color: #f9b161
+        font-family: Arial
+        font-size: 22px
+        margin-left: 10px
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+.card
+    &-item
+        display: flex
+        flex-direction: column
+        padding: 12px
+        align-items: center
+        width: 309px
+        height: 250px
+        background: #FFFFFF
+        box-shadow: 1px 2px 4px rgba(73, 73, 73, 0.15)
+        border-radius: 10px
+        margin-bottom: 45px
+        &__info
+            position: relative
+            width: 100%
+            &::after
+                content: ''
+                margin: auto
+                display: block
+                box-sizing: border-box
+                width: 265px
+                height: 2px
+                border: 1px solid rgba(196, 196, 196, 0.34)
+                border-radius: 2px
+                margin-bottom: 10px
+        &__img
+            border-radius: 100px
+            display: block
+            margin: auto
+            margin-bottom: 6px
+        &__text
+            text-align: center
+            margin-bottom: 6px
+            > span
+                display: block
+                font-size: 17px
+                margin-bottom: 6px
+        &__rating
+            display: flex
+            justify-content: space-between
+            margin: auto
+            max-width: 191px
+        &__footer
+            width: 100%
+        &__feature
+            max-width: 210px
+            display: flex
+            margin: auto
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 5px
+        &__favicon
+            margin-right: 17px
+            display: flex
+            align-items: center
+            margin-right: 17px
+
+.star
+    margin-right: 5px
+
+@media (max-width: 498px)
+    .cards
+        &-input
+            max-width: 180px

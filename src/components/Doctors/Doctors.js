@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../css/interface.css';
 import '../../css/doctors.css';
+
 
 class Doctors extends React.Component {
 
@@ -28,10 +30,13 @@ class Doctors extends React.Component {
                         })}
                     </div>
                     <div className='doctors-text'>
-                        <a href="#">
+                    <Link to={`/doctors`}>
+                    <a href="#">
                             <span>Посмотреть все</span>
                             <img src="/images/next.png"></img>
                         </a>
+                    </Link>
+                        
                     </div>     
                 </div>
             </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import axios from 'axios';
 import './css/interface.css';
 import Header from './components/Header/Header';
@@ -6,6 +7,9 @@ import Symptoms from './components/Symptoms/Symptoms';
 import Doctors from './components/Doctors/Doctors';
 import Clinics from './components/Clinics/Clinics';
 import Menu from './components/Menu/Menu';
+import DoctorsPage from './components/pages/DoctorsPage/DoctorsPage'
+import ClinicsPage from './components/pages/ClinicsPage/ClinicsPage'
+
 
 
 class App extends React.Component {
@@ -98,15 +102,22 @@ class App extends React.Component {
     const { doctorsData, clinicsData, symptomsData } = this.state;
   
     return (
-      <div>
-        <Header/>
-        <Symptoms symptomsData={symptomsData}/>
-        <Doctors doctorsData={doctorsData}/>
-        <div className='container'>
-          <Clinics clinicsData={clinicsData}/>
+      <Router>
+        <Route exact path='/'>
+        <div>
+          <Header/>
+          <Symptoms symptomsData={symptomsData}/>
+          <Doctors doctorsData={doctorsData}/>
+          <div className='container'>
+            <Clinics clinicsData={clinicsData}/>
+          </div>
+          <Menu/>
         </div>
-        <Menu/>
-      </div>
+        </Route>
+        <Route exact path='/doctors' component={DoctorsPage}></Route>
+        <Route exact path='/clinics' component={ClinicsPage}></Route>
+      </Router>
+     
     );
   }
 }
