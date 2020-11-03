@@ -12,9 +12,9 @@ class CardHeader extends React.Component {
                                 <img src="images/prev.png"></img>
                             </button>
                         </Link>
-                        <div className='cards-search'>
+                        <div className='cards-nav'>
                             <input className='cards-input' placeholder='Поиск по докторам'></input>
-                            <button className='cards-faq'>?</button>
+                            <button className='cards-search'><img src="/images/search.png"/></button>
                         </div>
                     </div>
                 </div>

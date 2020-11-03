@@ -87,7 +87,7 @@ class ClinicsPage extends React.Component {
 
     render() {
 
-        const stylesDifferences = [ { maxWidth: '190px', justifyContent: 'unset'}, { width: '128px'} ];
+        const stylesDifferences = [ { maxWidth: '190px', justifyContent: 'unset'}, { width: '116px'} ];
 
         return (
             

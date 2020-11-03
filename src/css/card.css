@@ -1,4 +1,4 @@
-.cards-back, .cards-faq {
+.cards-back, .cards-search {
   border: none;
   width: 45px;
   height: 45px;
@@ -8,12 +8,12 @@
           box-shadow: 1px 1px 5px rgba(35, 35, 35, 0.15);
 }
 
-.cards-back:active, .cards-faq:active {
+.cards-back:active, .cards-search:active {
   -webkit-box-shadow: inset 2px 3px 4px #D1D9E6;
           box-shadow: inset 2px 3px 4px #D1D9E6;
 }
 
-.cards-back:active:hover, .cards-faq:active:hover {
+.cards-back:active:hover, .cards-search:active:hover {
   opacity: 0.8;
 }
 
@@ -36,9 +36,10 @@
   outline: none;
   width: 309px;
   height: 39px;
+  margin-right: 10px;
 }
 
-.cards-faq {
+.cards-nav {
   color: #f9b161;
   font-family: Arial;
   font-size: 22px;
@@ -46,14 +47,11 @@
 }
 
 .cards-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(310px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-gap: 15px;
 }
 
 .card-item {
@@ -75,6 +73,7 @@
           box-shadow: 1px 2px 4px rgba(73, 73, 73, 0.15);
   border-radius: 10px;
   margin-bottom: 45px;
+  margin: auto;
 }
 
 .card-item__info {
@@ -111,6 +110,14 @@
   display: block;
   font-size: 17px;
   margin-bottom: 6px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.045em;
+  color: #042D48;
 }
 
 .card-item__rating {
@@ -122,6 +129,15 @@
           justify-content: space-between;
   margin: auto;
   max-width: 191px;
+}
+
+.card-item__speciality {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #818991;
 }
 
 .card-item__footer {
@@ -152,6 +168,24 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 17px;
+}
+
+.card-item__service {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #919599;
+  margin-right: auto;
+}
+
+.card-item__price {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #042D48;
 }
 
 .star {

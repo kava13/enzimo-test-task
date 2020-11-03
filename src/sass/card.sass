@@ -1,4 +1,4 @@
-.cards-back, .cards-faq
+.cards-back, .cards-search
     border: none
     width: 45px
     height: 45px
@@ -23,15 +23,16 @@
         outline: none
         width: 309px
         height: 39px
-    &-faq
+        margin-right: 10px
+    &-nav
         color: #f9b161
         font-family: Arial
         font-size: 22px
         margin-left: 10px
     &-wrapper
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(310px,1fr))
+        grid-gap: 15px
 
 .card
     &-item
@@ -45,6 +46,7 @@
         box-shadow: 1px 2px 4px rgba(73, 73, 73, 0.15)
         border-radius: 10px
         margin-bottom: 45px
+        margin: auto
         &__info
             position: relative
             width: 100%
@@ -70,11 +72,26 @@
                 display: block
                 font-size: 17px
                 margin-bottom: 6px
+                font-family: Arial
+                font-style: normal
+                font-weight: bold
+                font-size: 17px
+                line-height: 20px
+                text-align: center
+                letter-spacing: 0.045em
+                color: #042D48
         &__rating
             display: flex
             justify-content: space-between
             margin: auto
             max-width: 191px
+        &__speciality
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 18px
+            color: #818991
         &__footer
             width: 100%
         &__feature
@@ -89,6 +106,20 @@
             display: flex
             align-items: center
             margin-right: 17px
+        &__service
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 19px
+            color: #919599
+            margin-right: auto
+        &__price
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            color: #042D48
 
 .star
     margin-right: 5px

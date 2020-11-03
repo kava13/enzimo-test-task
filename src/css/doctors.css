@@ -65,7 +65,7 @@
   text-align: right;
 }
 
-.doctors-text > a > span {
+.doctors-text > a > a > span {
   display: inline-block;
   margin-right: 10px;
 }
